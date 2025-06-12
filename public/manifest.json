@@ -1,6 +1,7 @@
 {
-  "short_name": "DeveloperFolio",
-  "name": "DeveloperFolio",
+  "short_name": "DipPortfolio",
+  "name": "DipPortfolio",
+  "description": "Portfolio of Dip Nalawade, cybersecurity student and aspiring security analyst.",
   "icons": [
     {
       "src": "/favicon.ico",

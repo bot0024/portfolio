@@ -1,41 +1,38 @@
-name: Build and Deploy
-env:
-  CI: false
-  GITHUB_USERNAME: ${{ github.repository_owner }}
-  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
-  USE_GITHUB_DATA: "true"
-  MEDIUM_USERNAME: "saadpasta" # Change this to your medium username
+name: Deploy to GitHub Pages
+
 on:
-  workflow_dispatch:
   push:
     branches:
       - master
+  workflow_dispatch:
   schedule:
-    - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
+    - cron: "0 0 * * 0" # Runs at 00:00 UTC every Sunday
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3 # If you're using actions/checkout@v3 you must set persist-credentials to false in most cases for the deployment to work correctly.
-        with:
-          persist-credentials: false
+      - name: Checkout
+        uses: actions/checkout@v2
 
-      - name: Setup Node.js 🔧
-        uses: actions/setup-node@v3.8.1
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 18.x
+          node-version: "16"
 
-      - name: Update npm 🚀
-        run: npm install -g npm@latest
+      - name: Install Dependencies
+        run: npm install
 
-      - name: Install and Build 🔧 # Build the Project
-        run: |
-          npm install
-          npm run build
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Build
+        run: npm run build
+        env:
+          REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
+          USE_GITHUB_DATA: "true"
+          MEDIUM_USERNAME: "" # Remove or set your medium username
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.
+          branch: gh-pages
+          folder: build

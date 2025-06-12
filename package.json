@@ -1,13 +1,13 @@
 {
-  "homepage": "https://developerfolio.js.org/",
-  "name": "developerfolio",
+  "homepage": "https://your-username.github.io/your-portfolio",
+  "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "colorthief": "^2.3.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^6.3.0",
     "jest-canvas-mock": "^2.3.1",
     "lottie-react": "^2.4.0",
     "react": "^16.10.2",
@@ -15,9 +15,9 @@
     "react-easy-emoji": "^1.8.1",
     "react-headroom": "^3.0.0",
     "react-reveal": "^1.2.2",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^3.4.1",
     "react-test-renderer": "^16.10.2",
-    "react-twitter-embed": "3.0.3",
+    "react-twitter-embed": "^3.0.3",
     "sass": "^1.32.8"
   },
   "scripts": {

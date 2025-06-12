@@ -22,7 +22,7 @@ export default function Blogs() {
       : NaN;
   }
   useEffect(() => {
-    if (blogSection.displayMediumBlogs === "true") {
+    if (blogSection.displayMediumBlogs === true) {
       const getProfileData = () => {
         fetch("/blogs.json")
           .then(result => {
@@ -31,14 +31,14 @@ export default function Blogs() {
             }
           })
           .then(response => {
-            setMediumBlogsFunction(response.items);
+            // Limit to the latest 3 blogs
+            setMediumBlogsFunction(response.items.slice(0, 3));
           })
           .catch(function (error) {
             console.error(
               `${error} (because of this error Blogs section could not be displayed. Blogs section has reverted to default)`
             );
-            setMediumBlogsFunction("Error");
-            blogSection.displayMediumBlogs = "false";
+            setMediumBlogsFunction([]);
           });
       };
       getProfileData();
@@ -62,35 +62,36 @@ export default function Blogs() {
         </div>
         <div className="blog-main-div">
           <div className="blog-text-div">
-            {blogSection.displayMediumBlogs !== "true" ||
-            mediumBlogs === "Error"
-              ? blogSection.blogs.map((blog, i) => {
-                  return (
-                    <BlogCard
-                      key={i}
-                      isDark={isDark}
-                      blog={{
-                        url: blog.url,
-                        image: blog.image,
-                        title: blog.title,
-                        description: blog.description
-                      }}
-                    />
-                  );
-                })
-              : mediumBlogs.map((blog, i) => {
-                  return (
-                    <BlogCard
-                      key={i}
-                      isDark={isDark}
-                      blog={{
-                        url: blog.link,
-                        title: blog.title,
-                        description: extractTextContent(blog.content)
-                      }}
-                    />
-                  );
-                })}
+            {blogSection.displayMediumBlogs === true && mediumBlogs.length > 0 ? (
+              mediumBlogs.map((blog, i) => {
+                return (
+                  <BlogCard
+                    key={i}
+                    isDark={isDark}
+                    blog={{
+                      url: blog.link,
+                      title: blog.title,
+                      description: extractTextContent(blog.content)
+                    }}
+                  />
+                );
+              })
+            ) : (
+              blogSection.blogs.map((blog, i) => {
+                return (
+                  <BlogCard
+                    key={i}
+                    isDark={isDark}
+                    blog={{
+                      url: blog.url,
+                      image: blog.image,
+                      title: blog.title,
+                      description: blog.description
+                    }}
+                  />
+                );
+              })
+            )}
           </div>
         </div>
       </div>
