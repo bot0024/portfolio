@@ -37,7 +37,7 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/dip-nalawade/",
   gmail: "dipnalawade24@gmail.com",
   facebook: "https://www.facebook.com/",
-  medium: "https://medium.com/@bothacks",
+  medium: "https://medium.com/@BotHacks",
   Instagram: "https://www.instagram.com/nalawade_dip/",
   Twitter: "https://x.com/BotHacks_",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -197,7 +197,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: true, // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -286,16 +286,21 @@ const blogSection = {
   displayMediumBlogs: true, // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://medium.com/@BotHacks",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+      url: "https://medium.com/@BotHacks/%EF%B8%8F-recently-i-did-a-phishing-analysis-on-a-suspicious-email-heres-what-i-found-0ed6785ffc8d",
+      title: "Recently, I Did a Phishing Analysis on a Suspicious Email — Here's What I Found",
+      description:"Recently, I came across a suspicious email that looked *almost* legitimate. Out of curiosity (and my love for cybersecurity), I decided to dig in and perform a phishing analysis. What I found was a textbook example of a modern phishing attempt — and a reminder of how easily someone could fall for it.",
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://medium.com/@BotHacks/pickle-rick-tryhackmes-rick-morty-room-47b2b3e3d420",
+      title: "Pickle Rick — TryHackMe's Rick & Morty Room",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "I was never a fan of the show, Rick and Morty, but thought this CTF was interesting enough to try out. Web app hacking! Lets get to it. "
+    },
+    {
+      url: "https://medium.com/@BotHacks/how-to-start-a-career-in-cybersecurity-even-if-youre-a-complete-beginner-396062b7270e",
+      title: "How to Start a Career in Cybersecurity (Even If You're a Complete Beginner)",
+      description:
+        "The world is getting hacked—literally."
     }
   ],
   display: true // Set false to hide this section, defaults to true

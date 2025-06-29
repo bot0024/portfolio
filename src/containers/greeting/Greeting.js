@@ -37,7 +37,22 @@ export default function Greeting() {
                 {greeting.subTitle}
               </p>
               <div id="resume" className="empty-div"></div>
-              <SocialMedia />
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+                <SocialMedia />
+                <div style={{ marginTop: '-10px' }}>
+                  <iframe 
+                    src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3270209" 
+                    style={{
+                      border: 'none',
+                      height: '250px',
+                      width: '350px',
+                      overflow: 'hidden'
+                    }}
+                    scrolling="no"
+                    title="TryHackMe Badge"
+                  />
+                </div>
+              </div>
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
