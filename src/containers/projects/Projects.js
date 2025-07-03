@@ -23,7 +23,7 @@ export default function Projects() {
         setError(null);
         console.log("Starting to fetch profile.json...");
         
-        const response = await fetch("/profile.json", {
+        const response = await fetch(`${process.env.PUBLIC_URL}/profile.json`, {
           method: 'GET',
           headers: {
             'Accept': 'application/json',
