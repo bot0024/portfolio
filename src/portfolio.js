@@ -20,10 +20,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Dip Nalawade",
+  title: "Hi there, I'm Dip",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    " Aspiring SOC Analyst | Passionate about Threat Detection & Incident Response | I’m a cybersecurity student with a solid grounding in networking, Linux, and threat analysis—on a mission to turn curiosity into capability. I’m especially drawn to the fast-paced world of SOC operations, where real-time threats meet real-world problem-solving. Eager to kick off my journey with an internship or entry-level opportunity where I can contribute, learn, and grow into a sharp-eyed Security Analyst helping keep systems secure and threats at bay."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -33,13 +33,12 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/bot0024",
+  linkedin: "https://www.linkedin.com/in/dip-nalawade/",
+  gmail: "dipnalawade24@gmail.com",
+ // gitlab: "https://gitlab.com/",
+ // facebook: "https://www.facebook.com/",
+  medium: "https://medium.com/@BotHacks",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,15 +48,13 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "SECURING THE DIGITAL WORLD, ONE LAYER AT A TIME ",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚔️ Networking: TCP/IP, Firewalls, IDS/IPS Basics"),
+    emoji("⚔️ Operating Systems: Windows, Linux (Kali, Ubuntu)"),
+    emoji("⚔️ SIEM Concepts: Event Correlation, Log Monitoring, Alert Prioritization"),
+    emoji("⚔️ Security Tools: Wireshark, Nmap, Splunk (basic), Nessus(basics),etc"),
+    emoji("⚔️ Soft Skills: Critical Thinking, Communication, Time Management, Teamwork")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -65,57 +62,66 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "SIEM",
+      iconPath: "https://cdn.worldvectorlogo.com/logos/siem-2.svg"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Firewall Configuration",
+      iconPath: "https://www.svgrepo.com/show/284826/firewall.svg"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Splunk",
+      iconPath: "https://www.cprime.com/wp-content/uploads/2020/10/splunk-logo-150x150.jpg"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "Wireshark",
+      iconPath: "https://www.svgrepo.com/show/407415/shark.svg"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "CyberChef",
+      iconPath: "https://www.svgrepo.com/show/274912/chef.svg"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Nmap",
+      iconPath: "https://www.svgrepo.com/show/387515/eyes.svg"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "VirusTotal",
+      iconPath: "https://www.svgrepo.com/show/331633/virustotal.svg"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "Nessus Essentials",
+      iconPath: "https://img.icons8.com/stickers/100/hexagon.png"
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "Burp Suite",
+      iconPath: "https://www.svgrepo.com/show/454430/burpsuite-security-software.svg"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "python(Basic)",
+      iconPath: "https://www.svgrepo.com/show/452091/python.svg"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "John The Ripper",
+      iconPath: "https://www.kali.org/tools/john/images/john-logo.svg"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "SqlMap",
+      iconPath: "https://www.kali.org/tools/sqlmap/images/sqlmap-logo.svg"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+      skillName: "Hydra",
+      iconPath: "https://www.kali.org/tools/hydra/images/hydra-logo.svg"
+    },
+    {
+      skillName: "Gobuster",
+      iconPath: "https://www.kali.org/tools/gobuster/images/gobuster-logo.svg"
+    },
+    {
+      skillName: "Metasploit",
+      iconPath: "https://www.kali.org/tools/metasploit-framework/images/metasploit-framework-logo.svg"
+    },
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,23 +132,23 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "Pune University",
+      logo: require("./assets/images/sppu.png"),
+      subHeader: "Bachelor of Science in Cyber Security",
+      duration: "June 2023 - April 2026",
+      desc: "Networking, Ethical Hacking, Information Security, Digital Forensics, Cryptography",
+      // descBullets: [
+      //  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Marathwada MitraMandal's College of Commerce",
+      logo: require("./assets/images/mmcc.png"),
+      subHeader: "Maharashtra State Board of Secondary and Higher Secondary(HSC)",
+      duration: "September 2021 - April 2023",
+      desc: "Completed My 12th in Science, ...",
+      //descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -153,16 +159,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Security Operations (SOC Fundamentals)", //Insert stack or technology you have experience in
+      progressPercentage: "65%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
+      Stack: "Threat Analysis ",
       progressPercentage: "60%"
+    },
+    {
+      Stack: "Network Security",
+      progressPercentage: "67%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,30 +180,16 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Cyber Security Intern",
+      company: "Elevate Labs",
+      companylogo: require("./assets/images/elavatelabs.jpeg"),
+      date: "26 May 2025 to 28 June 2025",
+      desc: "Completed a one-month remote internship focused on core areas of cybersecurity through project-based learning and hands-on practice.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Gained practical experience in Network Security and  Ethical Hacking, including identifying and mitigating system vulnerabilities.",
+        "Performed threat analysis and applied security best practices aligned with industry standards."
       ]
     },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
   ]
 };
 
@@ -205,7 +197,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: true, // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -234,12 +226,12 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "http://nextuLogo.se/"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -252,50 +244,49 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Google: Tools of the Trade: Linux and SQL",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      "It demonstrates practical insights and hands-on experience with concepts essential to cybersecurity and system management.",
+      image: require("./assets/images/google.png"),
+      imageAlt: "Tools of the Trade: Linux and SQL logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "https://coursera.org/share/66d07db692c71a2c16a449b984a13227"
         },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
+        //{
+        //  name: "Award Letter",
+        //  url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        //},
+        //{
+        //  name: "Google Code-in Blog",
+        //  url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        //}
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Cybersecurity Analyst Job Simulation",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Completed a job simulation involving identity and access management (IAM) for Tata Consultancy Services, collaborating with a Cybersecurity Consulting team.",
+      image: require("./assets/images/Tata_logo.png"),
+      imageAlt: "Cybersecurity Analyst Job Simulation logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Certification",
+          url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_jiReKtWBktGTSGC6r_1743945671495_completion_certificate.pdf"
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Cyber Security Internship",
+      subtitle:
+        "Completed the Cyber Security Internship at Elevate Labs from 26 May 2025 to 28 June 2025, demonstrating exceptional skills and dedication in contributing to real-world projects and tasks",
+      image: require("./assets/images/elavatelabs.jpeg"),
+      imageAlt: "Cybersecurity Analyst Job Simulation logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1_uzhrQSmDoN4jjLEZQYyzz6KURoePj74/view?usp=drive_link"
         }
       ]
     }
@@ -312,17 +303,17 @@ const blogSection = {
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://medium.com/@BotHacks/%EF%B8%8F-recently-i-did-a-phishing-analysis-on-a-suspicious-email-heres-what-i-found-0ed6785ffc8d",
+      title: "Recently, I Did a Phishing Analysis on a Suspicious Email — Here's What I Found",
       description:
         "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://medium.com/@BotHacks/pickle-rick-tryhackmes-rick-morty-room-47b2b3e3d420",
+      title: "Pickle Rick — TryHackMe's Rick & Morty Room",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
+        "I was never a fan of the show, Rick and Morty, but thought this CTF was interesting enough to try out. Web app hacking! Lets get to it. "
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -339,11 +330,11 @@ const talkSection = {
     {
       title: "Build Actions For Google Assistant",
       subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
+      slides_url: "https://bit.ly/your-slides",
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +347,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -372,18 +363,18 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+91",
+  email_address: "dipnalawade24@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "BotHacks_", //Replace "twitter" with your twitter username without @
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
